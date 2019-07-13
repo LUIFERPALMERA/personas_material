@@ -28,7 +28,7 @@ public class AdaptadorPersona extends RecyclerView.Adapter<AdaptadorPersona.Pers
         Persona p = personas.get(i);
         personaViewHolder.foto.setImageResource(p.getFoto());
         personaViewHolder.nombre.setText(p.getNombre());
-        personaViewHolder.apellido.setText(p.getApellido()); 
+        personaViewHolder.apellido.setText(p.getApellido());
     }
 
     @Override
