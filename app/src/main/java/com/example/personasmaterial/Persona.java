@@ -48,4 +48,16 @@ public class Persona {
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
+
+    public void guardar(){
+        Datos.agregar(this);
+    }
+
+    public void editar(){
+        Datos.editar(this);
+    }
+
+    public void eliminar(){
+        Datos.eliminar(this);
+    }
 }
