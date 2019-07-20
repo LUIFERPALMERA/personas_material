@@ -12,29 +12,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
+        fab:menu_animationDelayPerItem="50"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_colorNormal="@color/colorAccent"
+        fab:menu_colorPressed="@color/colorAccent"
+        fab:menu_colorRipple="#99FFFFFF"
         fab:menu_fab_size="normal"
-        fab:menu_showShadow="true"
+        fab:menu_icon="@drawable/fab_add"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
         fab:menu_shadowColor="#66000000"
         fab:menu_shadowRadius="4dp"
         fab:menu_shadowXOffset="1dp"
         fab:menu_shadowYOffset="3dp"
-        fab:menu_colorNormal="#DA4336"
-        fab:menu_colorPressed="#E75043"
-        fab:menu_colorRipple="#99FFFFFF"
-        fab:menu_animationDelayPerItem="50"
-        fab:menu_icon="@drawable/fab_add"
-        fab:menu_buttonSpacing="0dp"
-        fab:menu_labels_margin="0dp"
-        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
-        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right">
+        fab:menu_showShadow="true">
 
         <com.github.clans.fab.FloatingActionButton
             android:id="@+id/menu_eliminar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="eliminar"
             android:src="@android:drawable/ic_menu_delete"
+            fab:fab_label="@string/eliminar"
             fab:fab_size="mini"
-            fab:fab_label="Menu item 1" />
+            fab:fab_colorNormal="@color/colorAccent"
+            fab:fab_colorPressed="@color/colorAccent"
+            />
 
     </com.github.clans.fab.FloatingActionMenu>
 
@@ -54,7 +58,7 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/fotode"
+            android:id="@+id/fotoD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/images2" />
@@ -78,7 +82,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/lblNombres"
+                    android:id="@+id/lblNombresD"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="TextView"
@@ -99,7 +103,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/lblApellidos"
+                    android:id="@+id/lblApellidosD"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="TextView"
